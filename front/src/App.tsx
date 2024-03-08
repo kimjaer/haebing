@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// 컴포넌트
+import Hd from './components/Hd'
+
+// 스타일
+import 'bootstrap/dist/css/bootstrap'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="haebing position-relative ">
+      {/* 
+         제작노하우
+         1. 컴포넌트의 재사용을 위해 id, class를 사용시 선택하도록 props 값으로 처리
+         2. 디지털이미지들을 svg는 컴포넌트로 생성하여 css로 수정이 용이하도록 처리
+      
+      */}
+      <Hd id="hd" cls="" />
     </div>
   );
 }
