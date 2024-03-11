@@ -1,0 +1,53 @@
+#hd{
+    ul.sns{
+        li{
+            transform: scale(0.85);
+            &.on{
+                svg{
+                    path.target{
+                        stroke: #EC9393 !important;
+                    }
+                }
+            }
+        }
+    }
+    ul.gnb{
+        li{
+            transform: scale(0.88);
+           
+           
+            a.active{
+                svg{
+                    path{
+                        stroke: #EC9393 !important;
+                    }
+                }
+
+            }
+       
+        }
+    }
+}
+
+.moving-outline {
+      
+    stroke-dasharray: 474;    
+    animation: menulineani 2s ease-in ;    
+    animation-fill-mode: forwards;    
+    stroke-dashoffset: -474; 
+    
+    }
+
+@keyframes menulineani {
+    0%{
+        stroke-dashoffset:-474;
+    }
+      
+    to {
+    
+        stroke-dashoffset: 0; 
+    
+    }
+    
+    
+} 

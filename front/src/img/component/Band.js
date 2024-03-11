@@ -1,4 +1,6 @@
-<svg width="44" height="25" viewBox="0 0 44 25" fill="none" >
+export default function Band() {
+  return (
+    <svg width="44" height="25" viewBox="0 0 44 25" fill="none" >
 <path d="M6 2C6 2.87695 6 6.10599 6 7" stroke="black" strokeWidth="3" strokeLinecap="round"/>
 <path d="M2 8H11" stroke="black" strokeWidth="3" strokeLinecap="round"/>
 <path d="M4.00172 15.7606C3.94496 13.7141 5.29581 11.7612 7.38314 12.0238C9.65271 12.0238 9.25748 15.6807 7.884 17.0937C5.94114 19.0926 4.047 17.3932 4.00172 15.7606Z" stroke="black" strokeWidth="3" strokeLinecap="round"/>
@@ -12,3 +14,5 @@
 <path d="M30.7109 12.5723C31.0864 12.5723 33.9044 12.5723 34.2824 12.5723" stroke="black" strokeWidth="3" strokeLinecap="round"/>
 <path d="M36.2575 17.0559C33.8017 17.2426 33.4297 20.63 34.7531 22.0277C35.4356 22.7485 36.4155 23.1119 37.3988 22.9695C40.8705 22.8091 41.2253 16.3356 36.2588 17.0559" stroke="black" strokeWidth="3" strokeLinecap="round"/>
 </svg>
+  )
+}
