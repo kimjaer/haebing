@@ -6,7 +6,8 @@
   "scripts": {
     "server": "node ./web.js",
     "front": "cd front && npm run build",
-    "start": "concurrently \"npm run server\" \"npm run front\""
+    "start": "concurrently \"npm run server\" \"npm run front\"",
+    "react" : "cd front && npm start"
   },
   "repository": {
     "type": "git",
