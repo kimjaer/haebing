@@ -84,22 +84,22 @@ export default function Hd({id, cls}) {
         <div className=" order-3 mt-5 ">
           <ul className='gnb d-flex w-100 justify-content-center'>
           <li className={`px-3 `}>
-              <Link to="/haebing">
+              <Link to="/sub/haebing">
                   <Brand>해빙</Brand>
               </Link>
             </li>
             <li className={`px-3 `}>
-              <Link to="/menu">
+              <Link to="/sub/menu">
                   <Menu>메뉴</Menu>
               </Link>
             </li>
             <li className={`px-3 `}>
-              <Link to="/campain">
+              <Link to="/sub/campain">
                   <Campain>환경캠페인</Campain>
               </Link>
             </li>
             <li className={`px-3 `}>
-              <Link to="/location">
+              <Link to="/sub/location">
                   <Location>위치</Location>
               </Link>
             </li>

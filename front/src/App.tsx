@@ -1,15 +1,20 @@
-import React from 'react';
+import { Route, Routes } from 'react-router-dom'
 
 // 컴포넌트
 import Hd from './components/Hd'
 import Ft from './components/Ft'
+
+//라우터
+import Main from './components/Main'
+import Subpage from './components/Subpage'
+
 
 // 스타일
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
-    <div className="haebing position-relative">
+    <div className="haebing position-relative pb-5">
       
       {/* 
          제작노하우
@@ -20,7 +25,12 @@ function App() {
       
       */}
       <Hd id="hd" cls="container d-flex flex-column justify-content-center align-items-center pt-4" />
-      <Ft id="ft" cls="mt-5"></Ft>
+<Routes>
+  <Route path='/' element={ <Main id="" cls=""></Main> }></Route>
+  <Route path="/sub/:routenm" element={ <Subpage id="" cls=""></Subpage> }></Route>
+</Routes>
+      
+      <Ft id="ft" cls="mt-5 "></Ft>
     </div>
   );
 }
