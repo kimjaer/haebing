@@ -11,6 +11,15 @@
             }
         }
     }
+
+    .up{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        animation: updown 1s infinite ease-in-out;
+    }
+
+
     ul.gnb{
         li{
             transform: scale(0.88);
@@ -67,13 +76,37 @@
 @keyframes menulineani {
     0%{
         stroke-dashoffset:-474;
+    }      
+    to {    
+        stroke-dashoffset: 0;     
     }
-      
-    to {
-    
-        stroke-dashoffset: 0; 
-    
-    }
-    
-    
 } 
+@keyframes updown {
+    0%{
+        opacity: 0;
+
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    
+   
+   
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+
+    }
+    
+}
+
+
+
